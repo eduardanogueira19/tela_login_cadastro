@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa programação front-end </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div class="imagem">
+        <img src="favicon.ico"  width="100" height="100" alt="imagem do logo do site">
+    </div>
+
+    <div class="button-container">
+        <button id="show-register-form">Sou novo por aqui</button> 
+        <button id="show-login-form">Já tenho cadastro</button>
+    </div>
+
+    <div id="formulario-cadastro" class="formulario">
+        <form id="form-cadastro" action="index.html" method="get">
+            <h1>Cadastro:</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex. Eduarda Nogueira">
+            
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" placeholder="Ex. 11223-134">
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ex. exemplo@gmail.com">
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+            <br>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+
+    <div id="formulario-login" class="formulario" style="display: none;">
+        <form id="form-login" action="index.html" method="get">
+            <h1>Login:</h1>
+            <label for="email-login">Email:</label>
+            <input type="email" id="email-login" name="email-login" placeholder="Ex. exemplo@gmail.com">
+            <br>
+            <label for="password-login">Senha:</label>
+            <input type="password" id="senha-login" name="senha-login">
+            <br>
+            <input type="submit" value="Entrar">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
